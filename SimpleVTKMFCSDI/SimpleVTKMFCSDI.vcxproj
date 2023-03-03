@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{D9075238-E3CF-4169-AE7F-B34446FC1BCC}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+    <RootNamespace>SimpleVTKMFCSDI</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\libs\VTK\VTK-9.2.0\Install_debug\include\vtk-9.2;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\libs\VTK\VTK-9.2.0\Install_debug\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\libs\VTK\VTK-9.2.0\Install_debug\include\vtk-9.2;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\libs\VTK\VTK-9.2.0\Install_debug\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>E:\libs\VTK\VTK-9.2.0\Install_debug\include\vtk-9.2;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\libs\VTK\VTK-9.2.0\Install_debug\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>E:\libs\VTK\VTK-9.2.0\Install_debug\include\vtk-9.2;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\libs\VTK\VTK-9.2.0\Install_debug\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>vtkcgns-9.2d.lib;vtkChartsCore-9.2d.lib;vtkCommonColor-9.2d.lib;vtkCommonComputationalGeometry-9.2d.lib;vtkCommonCore-9.2d.lib;vtkCommonDataModel-9.2d.lib;vtkCommonExecutionModel-9.2d.lib;vtkCommonMath-9.2d.lib;vtkCommonMisc-9.2d.lib;vtkCommonSystem-9.2d.lib;vtkCommonTransforms-9.2d.lib;vtkDICOMParser-9.2d.lib;vtkDomainsChemistry-9.2d.lib;vtkDomainsChemistryOpenGL2-9.2d.lib;vtkdoubleconversion-9.2d.lib;vtkexodusII-9.2d.lib;vtkexpat-9.2d.lib;vtkFiltersAMR-9.2d.lib;vtkFiltersCore-9.2d.lib;vtkFiltersExtraction-9.2d.lib;vtkFiltersFlowPaths-9.2d.lib;vtkFiltersGeneral-9.2d.lib;vtkFiltersGeneric-9.2d.lib;vtkFiltersGeometry-9.2d.lib;vtkFiltersHybrid-9.2d.lib;vtkFiltersHyperTree-9.2d.lib;vtkFiltersImaging-9.2d.lib;vtkFiltersModeling-9.2d.lib;vtkFiltersParallel-9.2d.lib;vtkFiltersParallelImaging-9.2d.lib;vtkFiltersPoints-9.2d.lib;vtkFiltersProgrammable-9.2d.lib;vtkFiltersSelection-9.2d.lib;vtkFiltersSMP-9.2d.lib;vtkFiltersSources-9.2d.lib;vtkFiltersStatistics-9.2d.lib;vtkFiltersTexture-9.2d.lib;vtkFiltersTopology-9.2d.lib;vtkFiltersVerdict-9.2d.lib;vtkfmt-9.2d.lib;vtkfreetype-9.2d.lib;vtkGeovisCore-9.2d.lib;vtkgl2ps-9.2d.lib;vtkglew-9.2d.lib;vtkGUISupportQt-9.2d.lib;vtkGUISupportQtQuick-9.2d.lib;vtkGUISupportQtSQL-9.2d.lib;vtkhdf5-9.2d.lib;vtkhdf5_hl-9.2d.lib;vtkImagingColor-9.2d.lib;vtkImagingCore-9.2d.lib;vtkImagingFourier-9.2d.lib;vtkImagingGeneral-9.2d.lib;vtkImagingHybrid-9.2d.lib;vtkImagingMath-9.2d.lib;vtkImagingMorphological-9.2d.lib;vtkImagingSources-9.2d.lib;vtkImagingStatistics-9.2d.lib;vtkImagingStencil-9.2d.lib;vtkInfovisCore-9.2d.lib;vtkInfovisLayout-9.2d.lib;vtkInteractionImage-9.2d.lib;vtkInteractionStyle-9.2d.lib;vtkInteractionWidgets-9.2d.lib;vtkIOAMR-9.2d.lib;vtkIOAsynchronous-9.2d.lib;vtkIOCesium3DTiles-9.2d.lib;vtkIOCGNSReader-9.2d.lib;vtkIOChemistry-9.2d.lib;vtkIOCityGML-9.2d.lib;vtkIOCONVERGECFD-9.2d.lib;vtkIOCore-9.2d.lib;vtkIOEnSight-9.2d.lib;vtkIOExodus-9.2d.lib;vtkIOExport-9.2d.lib;vtkIOExportGL2PS-9.2d.lib;vtkIOExportPDF-9.2d.lib;vtkIOGeometry-9.2d.lib;vtkIOHDF-9.2d.lib;vtkIOImage-9.2d.lib;vtkIOImport-9.2d.lib;vtkIOInfovis-9.2d.lib;vtkIOIOSS-9.2d.lib;vtkIOLegacy-9.2d.lib;vtkIOLSDyna-9.2d.lib;vtkIOMINC-9.2d.lib;vtkIOMotionFX-9.2d.lib;vtkIOMovie-9.2d.lib;vtkIONetCDF-9.2d.lib;vtkIOOggTheora-9.2d.lib;vtkIOParallel-9.2d.lib;vtkIOParallelXML-9.2d.lib;vtkIOPLY-9.2d.lib;vtkIOSegY-9.2d.lib;vtkIOSQL-9.2d.lib;vtkioss-9.2d.lib;vtkIOTecplotTable-9.2d.lib;vtkIOVeraOut-9.2d.lib;vtkIOVideo-9.2d.lib;vtkIOXML-9.2d.lib;vtkIOXMLParser-9.2d.lib;vtkjpeg-9.2d.lib;vtkjsoncpp-9.2d.lib;vtkkissfft-9.2d.lib;vtklibharu-9.2d.lib;vtklibproj-9.2d.lib;vtklibxml2-9.2d.lib;vtkloguru-9.2d.lib;vtklz4-9.2d.lib;vtklzma-9.2d.lib;vtkmetaio-9.2d.lib;vtknetcdf-9.2d.lib;vtkogg-9.2d.lib;vtkParallelCore-9.2d.lib;vtkParallelDIY-9.2d.lib;vtkpng-9.2d.lib;vtkpugixml-9.2d.lib;vtkRenderingAnnotation-9.2d.lib;vtkRenderingContext2D-9.2d.lib;vtkRenderingContextOpenGL2-9.2d.lib;vtkRenderingCore-9.2d.lib;vtkRenderingFreeType-9.2d.lib;vtkRenderingGL2PSOpenGL2-9.2d.lib;vtkRenderingHyperTreeGrid-9.2d.lib;vtkRenderingImage-9.2d.lib;vtkRenderingLabel-9.2d.lib;vtkRenderingLICOpenGL2-9.2d.lib;vtkRenderingLOD-9.2d.lib;vtkRenderingOpenGL2-9.2d.lib;vtkRenderingQt-9.2d.lib;vtkRenderingSceneGraph-9.2d.lib;vtkRenderingUI-9.2d.lib;vtkRenderingVolume-9.2d.lib;vtkRenderingVolumeOpenGL2-9.2d.lib;vtkRenderingVtkJS-9.2d.lib;vtksqlite-9.2d.lib;vtksys-9.2d.lib;vtkTestingRendering-9.2d.lib;vtktheora-9.2d.lib;vtktiff-9.2d.lib;vtkverdict-9.2d.lib;vtkViewsContext2D-9.2d.lib;vtkViewsCore-9.2d.lib;vtkViewsInfovis-9.2d.lib;vtkViewsQt-9.2d.lib;vtkWrappingTools-9.2d.lib;vtkzlib-9.2d.lib;</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\Works\VTK-9.0.1\Common\Core;C:\Works\VTK-9.0.1\Common\DataModel;C:\Works\VTK-9.0.1\Common\ExecutionModel;C:\Works\VTK-9.0.1\Common\Math;C:\Works\VTK-9.0.1\Filters\Sources;C:\Works\VTK-9.0.1\GUISupport\MFC;C:\Works\VTK-9.0.1\Interaction\Style;C:\Works\VTK-9.0.1\Rendering\Core;C:\Works\VTK-9.0.1\Rendering\OpenGL2;C:\Works\VTK-9.0.1\Utilities\KWIML;C:\Works\VTK-9.0.1\build\Common\Core;C:\Works\VTK-9.0.1\build\Common\DataModel;C:\Works\VTK-9.0.1\build\Common\ExecutionModel;C:\Works\VTK-9.0.1\build\Filters\Core;C:\Works\VTK-9.0.1\build\Filters\Sources;C:\Works\VTK-9.0.1\build\GUISupport\MFC;C:\Works\VTK-9.0.1\build\Interaction\Style;C:\Works\VTK-9.0.1\build\Rendering\UI;C:\Works\VTK-9.0.1\build\Rendering\OpenGL2;C:\Works\VTK-9.0.1\build\Rendering\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>C:\Works\VTK-9.0.1\build\lib\Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>vtkcgns-9.2d.lib;vtkChartsCore-9.2d.lib;vtkCommonColor-9.2d.lib;vtkCommonComputationalGeometry-9.2d.lib;vtkCommonCore-9.2d.lib;vtkCommonDataModel-9.2d.lib;vtkCommonExecutionModel-9.2d.lib;vtkCommonMath-9.2d.lib;vtkCommonMisc-9.2d.lib;vtkCommonSystem-9.2d.lib;vtkCommonTransforms-9.2d.lib;vtkDICOMParser-9.2d.lib;vtkDomainsChemistry-9.2d.lib;vtkDomainsChemistryOpenGL2-9.2d.lib;vtkdoubleconversion-9.2d.lib;vtkexodusII-9.2d.lib;vtkexpat-9.2d.lib;vtkFiltersAMR-9.2d.lib;vtkFiltersCore-9.2d.lib;vtkFiltersExtraction-9.2d.lib;vtkFiltersFlowPaths-9.2d.lib;vtkFiltersGeneral-9.2d.lib;vtkFiltersGeneric-9.2d.lib;vtkFiltersGeometry-9.2d.lib;vtkFiltersHybrid-9.2d.lib;vtkFiltersHyperTree-9.2d.lib;vtkFiltersImaging-9.2d.lib;vtkFiltersModeling-9.2d.lib;vtkFiltersParallel-9.2d.lib;vtkFiltersParallelImaging-9.2d.lib;vtkFiltersPoints-9.2d.lib;vtkFiltersProgrammable-9.2d.lib;vtkFiltersSelection-9.2d.lib;vtkFiltersSMP-9.2d.lib;vtkFiltersSources-9.2d.lib;vtkFiltersStatistics-9.2d.lib;vtkFiltersTexture-9.2d.lib;vtkFiltersTopology-9.2d.lib;vtkFiltersVerdict-9.2d.lib;vtkfmt-9.2d.lib;vtkfreetype-9.2d.lib;vtkGeovisCore-9.2d.lib;vtkgl2ps-9.2d.lib;vtkglew-9.2d.lib;vtkGUISupportQt-9.2d.lib;vtkGUISupportQtQuick-9.2d.lib;vtkGUISupportQtSQL-9.2d.lib;vtkhdf5-9.2d.lib;vtkhdf5_hl-9.2d.lib;vtkImagingColor-9.2d.lib;vtkImagingCore-9.2d.lib;vtkImagingFourier-9.2d.lib;vtkImagingGeneral-9.2d.lib;vtkImagingHybrid-9.2d.lib;vtkImagingMath-9.2d.lib;vtkImagingMorphological-9.2d.lib;vtkImagingSources-9.2d.lib;vtkImagingStatistics-9.2d.lib;vtkImagingStencil-9.2d.lib;vtkInfovisCore-9.2d.lib;vtkInfovisLayout-9.2d.lib;vtkInteractionImage-9.2d.lib;vtkInteractionStyle-9.2d.lib;vtkInteractionWidgets-9.2d.lib;vtkIOAMR-9.2d.lib;vtkIOAsynchronous-9.2d.lib;vtkIOCesium3DTiles-9.2d.lib;vtkIOCGNSReader-9.2d.lib;vtkIOChemistry-9.2d.lib;vtkIOCityGML-9.2d.lib;vtkIOCONVERGECFD-9.2d.lib;vtkIOCore-9.2d.lib;vtkIOEnSight-9.2d.lib;vtkIOExodus-9.2d.lib;vtkIOExport-9.2d.lib;vtkIOExportGL2PS-9.2d.lib;vtkIOExportPDF-9.2d.lib;vtkIOGeometry-9.2d.lib;vtkIOHDF-9.2d.lib;vtkIOImage-9.2d.lib;vtkIOImport-9.2d.lib;vtkIOInfovis-9.2d.lib;vtkIOIOSS-9.2d.lib;vtkIOLegacy-9.2d.lib;vtkIOLSDyna-9.2d.lib;vtkIOMINC-9.2d.lib;vtkIOMotionFX-9.2d.lib;vtkIOMovie-9.2d.lib;vtkIONetCDF-9.2d.lib;vtkIOOggTheora-9.2d.lib;vtkIOParallel-9.2d.lib;vtkIOParallelXML-9.2d.lib;vtkIOPLY-9.2d.lib;vtkIOSegY-9.2d.lib;vtkIOSQL-9.2d.lib;vtkioss-9.2d.lib;vtkIOTecplotTable-9.2d.lib;vtkIOVeraOut-9.2d.lib;vtkIOVideo-9.2d.lib;vtkIOXML-9.2d.lib;vtkIOXMLParser-9.2d.lib;vtkjpeg-9.2d.lib;vtkjsoncpp-9.2d.lib;vtkkissfft-9.2d.lib;vtklibharu-9.2d.lib;vtklibproj-9.2d.lib;vtklibxml2-9.2d.lib;vtkloguru-9.2d.lib;vtklz4-9.2d.lib;vtklzma-9.2d.lib;vtkmetaio-9.2d.lib;vtknetcdf-9.2d.lib;vtkogg-9.2d.lib;vtkParallelCore-9.2d.lib;vtkParallelDIY-9.2d.lib;vtkpng-9.2d.lib;vtkpugixml-9.2d.lib;vtkRenderingAnnotation-9.2d.lib;vtkRenderingContext2D-9.2d.lib;vtkRenderingContextOpenGL2-9.2d.lib;vtkRenderingCore-9.2d.lib;vtkRenderingFreeType-9.2d.lib;vtkRenderingGL2PSOpenGL2-9.2d.lib;vtkRenderingHyperTreeGrid-9.2d.lib;vtkRenderingImage-9.2d.lib;vtkRenderingLabel-9.2d.lib;vtkRenderingLICOpenGL2-9.2d.lib;vtkRenderingLOD-9.2d.lib;vtkRenderingOpenGL2-9.2d.lib;vtkRenderingQt-9.2d.lib;vtkRenderingSceneGraph-9.2d.lib;vtkRenderingUI-9.2d.lib;vtkRenderingVolume-9.2d.lib;vtkRenderingVolumeOpenGL2-9.2d.lib;vtkRenderingVtkJS-9.2d.lib;vtksqlite-9.2d.lib;vtksys-9.2d.lib;vtkTestingRendering-9.2d.lib;vtktheora-9.2d.lib;vtktiff-9.2d.lib;vtkverdict-9.2d.lib;vtkViewsContext2D-9.2d.lib;vtkViewsCore-9.2d.lib;vtkViewsInfovis-9.2d.lib;vtkViewsQt-9.2d.lib;vtkWrappingTools-9.2d.lib;vtkzlib-9.2d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>vtkcgns-9.2d.lib;vtkChartsCore-9.2d.lib;vtkCommonColor-9.2d.lib;vtkCommonComputationalGeometry-9.2d.lib;vtkCommonCore-9.2d.lib;vtkCommonDataModel-9.2d.lib;vtkCommonExecutionModel-9.2d.lib;vtkCommonMath-9.2d.lib;vtkCommonMisc-9.2d.lib;vtkCommonSystem-9.2d.lib;vtkCommonTransforms-9.2d.lib;vtkDICOMParser-9.2d.lib;vtkDomainsChemistry-9.2d.lib;vtkDomainsChemistryOpenGL2-9.2d.lib;vtkdoubleconversion-9.2d.lib;vtkexodusII-9.2d.lib;vtkexpat-9.2d.lib;vtkFiltersAMR-9.2d.lib;vtkFiltersCore-9.2d.lib;vtkFiltersExtraction-9.2d.lib;vtkFiltersFlowPaths-9.2d.lib;vtkFiltersGeneral-9.2d.lib;vtkFiltersGeneric-9.2d.lib;vtkFiltersGeometry-9.2d.lib;vtkFiltersHybrid-9.2d.lib;vtkFiltersHyperTree-9.2d.lib;vtkFiltersImaging-9.2d.lib;vtkFiltersModeling-9.2d.lib;vtkFiltersParallel-9.2d.lib;vtkFiltersParallelImaging-9.2d.lib;vtkFiltersPoints-9.2d.lib;vtkFiltersProgrammable-9.2d.lib;vtkFiltersSelection-9.2d.lib;vtkFiltersSMP-9.2d.lib;vtkFiltersSources-9.2d.lib;vtkFiltersStatistics-9.2d.lib;vtkFiltersTexture-9.2d.lib;vtkFiltersTopology-9.2d.lib;vtkFiltersVerdict-9.2d.lib;vtkfmt-9.2d.lib;vtkfreetype-9.2d.lib;vtkGeovisCore-9.2d.lib;vtkgl2ps-9.2d.lib;vtkglew-9.2d.lib;vtkGUISupportQt-9.2d.lib;vtkGUISupportQtQuick-9.2d.lib;vtkGUISupportQtSQL-9.2d.lib;vtkhdf5-9.2d.lib;vtkhdf5_hl-9.2d.lib;vtkImagingColor-9.2d.lib;vtkImagingCore-9.2d.lib;vtkImagingFourier-9.2d.lib;vtkImagingGeneral-9.2d.lib;vtkImagingHybrid-9.2d.lib;vtkImagingMath-9.2d.lib;vtkImagingMorphological-9.2d.lib;vtkImagingSources-9.2d.lib;vtkImagingStatistics-9.2d.lib;vtkImagingStencil-9.2d.lib;vtkInfovisCore-9.2d.lib;vtkInfovisLayout-9.2d.lib;vtkInteractionImage-9.2d.lib;vtkInteractionStyle-9.2d.lib;vtkInteractionWidgets-9.2d.lib;vtkIOAMR-9.2d.lib;vtkIOAsynchronous-9.2d.lib;vtkIOCesium3DTiles-9.2d.lib;vtkIOCGNSReader-9.2d.lib;vtkIOChemistry-9.2d.lib;vtkIOCityGML-9.2d.lib;vtkIOCONVERGECFD-9.2d.lib;vtkIOCore-9.2d.lib;vtkIOEnSight-9.2d.lib;vtkIOExodus-9.2d.lib;vtkIOExport-9.2d.lib;vtkIOExportGL2PS-9.2d.lib;vtkIOExportPDF-9.2d.lib;vtkIOGeometry-9.2d.lib;vtkIOHDF-9.2d.lib;vtkIOImage-9.2d.lib;vtkIOImport-9.2d.lib;vtkIOInfovis-9.2d.lib;vtkIOIOSS-9.2d.lib;vtkIOLegacy-9.2d.lib;vtkIOLSDyna-9.2d.lib;vtkIOMINC-9.2d.lib;vtkIOMotionFX-9.2d.lib;vtkIOMovie-9.2d.lib;vtkIONetCDF-9.2d.lib;vtkIOOggTheora-9.2d.lib;vtkIOParallel-9.2d.lib;vtkIOParallelXML-9.2d.lib;vtkIOPLY-9.2d.lib;vtkIOSegY-9.2d.lib;vtkIOSQL-9.2d.lib;vtkioss-9.2d.lib;vtkIOTecplotTable-9.2d.lib;vtkIOVeraOut-9.2d.lib;vtkIOVideo-9.2d.lib;vtkIOXML-9.2d.lib;vtkIOXMLParser-9.2d.lib;vtkjpeg-9.2d.lib;vtkjsoncpp-9.2d.lib;vtkkissfft-9.2d.lib;vtklibharu-9.2d.lib;vtklibproj-9.2d.lib;vtklibxml2-9.2d.lib;vtkloguru-9.2d.lib;vtklz4-9.2d.lib;vtklzma-9.2d.lib;vtkmetaio-9.2d.lib;vtknetcdf-9.2d.lib;vtkogg-9.2d.lib;vtkParallelCore-9.2d.lib;vtkParallelDIY-9.2d.lib;vtkpng-9.2d.lib;vtkpugixml-9.2d.lib;vtkRenderingAnnotation-9.2d.lib;vtkRenderingContext2D-9.2d.lib;vtkRenderingContextOpenGL2-9.2d.lib;vtkRenderingCore-9.2d.lib;vtkRenderingFreeType-9.2d.lib;vtkRenderingGL2PSOpenGL2-9.2d.lib;vtkRenderingHyperTreeGrid-9.2d.lib;vtkRenderingImage-9.2d.lib;vtkRenderingLabel-9.2d.lib;vtkRenderingLICOpenGL2-9.2d.lib;vtkRenderingLOD-9.2d.lib;vtkRenderingOpenGL2-9.2d.lib;vtkRenderingQt-9.2d.lib;vtkRenderingSceneGraph-9.2d.lib;vtkRenderingUI-9.2d.lib;vtkRenderingVolume-9.2d.lib;vtkRenderingVolumeOpenGL2-9.2d.lib;vtkRenderingVtkJS-9.2d.lib;vtksqlite-9.2d.lib;vtksys-9.2d.lib;vtkTestingRendering-9.2d.lib;vtktheora-9.2d.lib;vtktiff-9.2d.lib;vtkverdict-9.2d.lib;vtkViewsContext2D-9.2d.lib;vtkViewsCore-9.2d.lib;vtkViewsInfovis-9.2d.lib;vtkViewsQt-9.2d.lib;vtkWrappingTools-9.2d.lib;vtkzlib-9.2d.lib;</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>vtkcgns-9.2d.lib;vtkChartsCore-9.2d.lib;vtkCommonColor-9.2d.lib;vtkCommonComputationalGeometry-9.2d.lib;vtkCommonCore-9.2d.lib;vtkCommonDataModel-9.2d.lib;vtkCommonExecutionModel-9.2d.lib;vtkCommonMath-9.2d.lib;vtkCommonMisc-9.2d.lib;vtkCommonSystem-9.2d.lib;vtkCommonTransforms-9.2d.lib;vtkDICOMParser-9.2d.lib;vtkDomainsChemistry-9.2d.lib;vtkDomainsChemistryOpenGL2-9.2d.lib;vtkdoubleconversion-9.2d.lib;vtkexodusII-9.2d.lib;vtkexpat-9.2d.lib;vtkFiltersAMR-9.2d.lib;vtkFiltersCore-9.2d.lib;vtkFiltersExtraction-9.2d.lib;vtkFiltersFlowPaths-9.2d.lib;vtkFiltersGeneral-9.2d.lib;vtkFiltersGeneric-9.2d.lib;vtkFiltersGeometry-9.2d.lib;vtkFiltersHybrid-9.2d.lib;vtkFiltersHyperTree-9.2d.lib;vtkFiltersImaging-9.2d.lib;vtkFiltersModeling-9.2d.lib;vtkFiltersParallel-9.2d.lib;vtkFiltersParallelImaging-9.2d.lib;vtkFiltersPoints-9.2d.lib;vtkFiltersProgrammable-9.2d.lib;vtkFiltersSelection-9.2d.lib;vtkFiltersSMP-9.2d.lib;vtkFiltersSources-9.2d.lib;vtkFiltersStatistics-9.2d.lib;vtkFiltersTexture-9.2d.lib;vtkFiltersTopology-9.2d.lib;vtkFiltersVerdict-9.2d.lib;vtkfmt-9.2d.lib;vtkfreetype-9.2d.lib;vtkGeovisCore-9.2d.lib;vtkgl2ps-9.2d.lib;vtkglew-9.2d.lib;vtkGUISupportQt-9.2d.lib;vtkGUISupportQtQuick-9.2d.lib;vtkGUISupportQtSQL-9.2d.lib;vtkhdf5-9.2d.lib;vtkhdf5_hl-9.2d.lib;vtkImagingColor-9.2d.lib;vtkImagingCore-9.2d.lib;vtkImagingFourier-9.2d.lib;vtkImagingGeneral-9.2d.lib;vtkImagingHybrid-9.2d.lib;vtkImagingMath-9.2d.lib;vtkImagingMorphological-9.2d.lib;vtkImagingSources-9.2d.lib;vtkImagingStatistics-9.2d.lib;vtkImagingStencil-9.2d.lib;vtkInfovisCore-9.2d.lib;vtkInfovisLayout-9.2d.lib;vtkInteractionImage-9.2d.lib;vtkInteractionStyle-9.2d.lib;vtkInteractionWidgets-9.2d.lib;vtkIOAMR-9.2d.lib;vtkIOAsynchronous-9.2d.lib;vtkIOCesium3DTiles-9.2d.lib;vtkIOCGNSReader-9.2d.lib;vtkIOChemistry-9.2d.lib;vtkIOCityGML-9.2d.lib;vtkIOCONVERGECFD-9.2d.lib;vtkIOCore-9.2d.lib;vtkIOEnSight-9.2d.lib;vtkIOExodus-9.2d.lib;vtkIOExport-9.2d.lib;vtkIOExportGL2PS-9.2d.lib;vtkIOExportPDF-9.2d.lib;vtkIOGeometry-9.2d.lib;vtkIOHDF-9.2d.lib;vtkIOImage-9.2d.lib;vtkIOImport-9.2d.lib;vtkIOInfovis-9.2d.lib;vtkIOIOSS-9.2d.lib;vtkIOLegacy-9.2d.lib;vtkIOLSDyna-9.2d.lib;vtkIOMINC-9.2d.lib;vtkIOMotionFX-9.2d.lib;vtkIOMovie-9.2d.lib;vtkIONetCDF-9.2d.lib;vtkIOOggTheora-9.2d.lib;vtkIOParallel-9.2d.lib;vtkIOParallelXML-9.2d.lib;vtkIOPLY-9.2d.lib;vtkIOSegY-9.2d.lib;vtkIOSQL-9.2d.lib;vtkioss-9.2d.lib;vtkIOTecplotTable-9.2d.lib;vtkIOVeraOut-9.2d.lib;vtkIOVideo-9.2d.lib;vtkIOXML-9.2d.lib;vtkIOXMLParser-9.2d.lib;vtkjpeg-9.2d.lib;vtkjsoncpp-9.2d.lib;vtkkissfft-9.2d.lib;vtklibharu-9.2d.lib;vtklibproj-9.2d.lib;vtklibxml2-9.2d.lib;vtkloguru-9.2d.lib;vtklz4-9.2d.lib;vtklzma-9.2d.lib;vtkmetaio-9.2d.lib;vtknetcdf-9.2d.lib;vtkogg-9.2d.lib;vtkParallelCore-9.2d.lib;vtkParallelDIY-9.2d.lib;vtkpng-9.2d.lib;vtkpugixml-9.2d.lib;vtkRenderingAnnotation-9.2d.lib;vtkRenderingContext2D-9.2d.lib;vtkRenderingContextOpenGL2-9.2d.lib;vtkRenderingCore-9.2d.lib;vtkRenderingFreeType-9.2d.lib;vtkRenderingGL2PSOpenGL2-9.2d.lib;vtkRenderingHyperTreeGrid-9.2d.lib;vtkRenderingImage-9.2d.lib;vtkRenderingLabel-9.2d.lib;vtkRenderingLICOpenGL2-9.2d.lib;vtkRenderingLOD-9.2d.lib;vtkRenderingOpenGL2-9.2d.lib;vtkRenderingQt-9.2d.lib;vtkRenderingSceneGraph-9.2d.lib;vtkRenderingUI-9.2d.lib;vtkRenderingVolume-9.2d.lib;vtkRenderingVolumeOpenGL2-9.2d.lib;vtkRenderingVtkJS-9.2d.lib;vtksqlite-9.2d.lib;vtksys-9.2d.lib;vtkTestingRendering-9.2d.lib;vtktheora-9.2d.lib;vtktiff-9.2d.lib;vtkverdict-9.2d.lib;vtkViewsContext2D-9.2d.lib;vtkViewsCore-9.2d.lib;vtkViewsInfovis-9.2d.lib;vtkViewsQt-9.2d.lib;vtkWrappingTools-9.2d.lib;vtkzlib-9.2d.lib;</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SimpleVTKMFCSDI.h" />
+    <ClInclude Include="SimpleVTKMFCSDIDoc.h" />
+    <ClInclude Include="SimpleVTKMFCSDIView.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="vtkGUISupportMFCModule.h" />
+    <ClInclude Include="vtkMFCWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SimpleVTKMFCSDI.cpp" />
+    <ClCompile Include="SimpleVTKMFCSDIDoc.cpp" />
+    <ClCompile Include="SimpleVTKMFCSDIView.cpp" />
+    <ClCompile Include="vtkMFCWindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SimpleVTKMFCSDI.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\SimpleVTKMFCSDI.ico" />
+    <Image Include="res\SimpleVTKMFCSDIDoc.ico" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\Toolbar256.bmp" />
+    <Image Include="res\userimages.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ribbon1.mfcribbon-ms" />
+    <None Include="res\ribbon2.mfcribbon-ms" />
+    <None Include="res\SimpleVTKMFCSDI.rc2" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
